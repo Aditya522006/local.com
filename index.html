@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MangaPlus Inspired Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo-name">
+                <img src="your-logo.png" alt="Logo" class="logo">
+                <span class="site-name">Manga World</span>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#new-releases">New Releases</a></li>
+                    <li><a href="#popular">Popular</a></li>
+                    <li><a href="#genres">Genres</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Search Form -->
+            <div class="search-icon">
+                <form class="search-form" action="/search" method="GET">
+                    <input type="text" name="query" placeholder="Search..." class="search-input">
+                    <button type="submit" class="search-button">
+                        <img src="search-icon.png" alt="Search" class="search">
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+        <div class="hero-content">
+            <h1>Explore the World of Manga</h1>
+            <p>Discover new releases, popular series, and hidden gems. Start reading today!</p>
+            <a href="#new-releases" class="btn-primary">Discover More</a>
+        </div>
+    </section>
+
+    <!-- Trending Section -->
+    <section id="trending" class="trending-section">
+        <h2>Trending Now</h2>
+        <div class="trending-grid">
+            <!-- Trending Manga Cards -->
+            <div class="card">
+                <img src="manga-cover1.jpg" alt="Manga Cover">
+                <div class="card-content">
+                    <h3>Manga Title 1</h3>
+                    <p>Chapter 120 Released</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="manga-cover2.jpg" alt="Manga Cover">
+                <div class="card-content">
+                    <h3>Manga Title 2</h3>
+                    <p>Chapter 89 Released</p>
+                </div>
+            </div>
+
+            <!-- More trending manga cards -->
+        </div>
+    </section>
+
+    <!-- New Releases Section -->
+    <section id="new-releases" class="new-releases-section">
+        <h2>New Releases</h2>
+        <div class="new-releases-grid">
+            <!-- New Release Cards -->
+            <div class="card">
+                <img src="manga-cover3.jpg" alt="Manga Cover">
+                <div class="card-content">
+                    <h3>Manga Title 3</h3>
+                    <p>Released on: Sept 15, 2024</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="manga-cover4.jpg" alt="Manga Cover">
+                <div class="card-content">
+                    <h3>Manga Title 4</h3>
+                    <p>Released on: Sept 10, 2024</p>
+                </div>
+            </div>
+
+            <!-- More new release cards -->
+        </div>
+    </section>
+
+    <!-- Popular Section -->
+    <section id="popular" class="popular-section">
+        <h2>Popular Series</h2>
+        <div class="popular-grid">
+            <!-- Popular Series Cards -->
+            <div class="card">
+                <img src="manga-cover5.jpg" alt="Manga Cover">
+                <div class="card-content">
+                    <h3>Manga Title 5</h3>
+                    <p>Rated 4.9/5</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="manga-cover6.jpg" alt="Manga Cover">
+                <div class="card-content">
+                    <h3>Manga Title 6</h3>
+                    <p>Rated 4.8/5</p>
+                </div>
+            </div>
+
+            <!-- More popular manga cards -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="your-logo.png" alt="Logo">
+                <span>Manga World</span>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#genres">Genres</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="/terms">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script>
+    // JavaScript for search form expansion effect
+document.querySelector('.search-button').addEventListener('click', function(event) {
+    const searchInput = document.querySelector('.search-input');
+    searchInput.focus();
+    searchInput.style.width = searchInput.style.width === '200px' ? '0' : '200px';
+    searchInput.style.opacity = searchInput.style.opacity === '1' ? '0' : '1';
+});
+
+</script>
+</html>
